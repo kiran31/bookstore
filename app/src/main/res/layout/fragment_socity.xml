@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Fonts.LatoBLack
+            android:id="@+id/tv_pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:padding="@dimen/space_5"
+            android:layout_margin="@dimen/space_10"
+            android:text="Select Area/Society"
+            android:textSize="14sp" />
+
+        <TextView
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/chivo"
+            android:padding="@dimen/space_5"
+            android:background="@drawable/bg_rounded_button"
+            android:layout_margin="@dimen/space_10"
+            android:text="Show All"
+
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <AutoCompleteTextView
+        android:completionThreshold="1"
+        android:id="@+id/et_socity_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_14"
+        android:fontFamily="@font/chivo"
+        android:background="@drawable/xml_textbox_bg"
+        android:ems="10"
+        android:hint="@string/et_sea"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/space_14" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_socity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

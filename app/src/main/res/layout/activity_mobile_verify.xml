@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MobileVerify">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_back"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_15"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_nav_back"
+                android:layout_height="wrap_content"/>
+
+            <Fonts.LatoBLack
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_20"
+                android:id="@+id/txt_name"
+                android:layout_toRightOf="@id/txt_back"
+                android:text="Verify Mobile"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:layout_centerVertical="true"
+
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="center_horizontal"
+        android:src="@drawable/logo"
+
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Fonts.LatoBLack
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="#000"
+            android:layout_marginLeft="@dimen/space_15"
+
+            android:text="Mobile Number"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iconnemail"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:src="@drawable/iconn" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@drawable/xml_textbox_bg"
+        android:layout_margin="@dimen/space_15"
+        android:maxLength="10"
+        android:fontFamily="@font/chivo"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+
+        />
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:fontFamily="@font/chivo"
+        android:layout_margin="@dimen/space_15"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

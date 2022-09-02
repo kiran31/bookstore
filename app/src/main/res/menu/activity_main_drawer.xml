@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group
+        android:id="@+id/group_shop_now"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shop_now"
+            android:icon="@drawable/ic_nav_home"
+            android:iconTint="@color/white"
+            android:title="@string/nav_home" />
+    </group>
+    <group
+        android:id="@+id/group_my_profile"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_nav_profile"
+            android:iconTint="@color/white"
+            android:title="My Profile" />
+    </group>
+    <group
+        android:id="@+id/group_my_wishlist"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_wishlist"
+            android:icon="@drawable/wish_list"
+            android:iconTint="@color/white"
+            android:title="My WishList" />
+    </group>
+    <group
+        android:id="@+id/group_support"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_nav_support"
+            android:visible="false"
+            android:iconTint="@color/white"
+            android:title="@string/nav_chat" />
+    </group>
+    <group
+        android:id="@+id/group_aboutus"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_nav_about"
+            android:iconTint="@color/white"
+            android:title="@string/nav_about" />
+    </group>
+    <group
+        android:id="@+id/group_policy"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_policy"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_nav_policy"
+            android:title="@string/nav_terms" />
+    </group>
+
+    <group
+        android:id="@+id/group_contact"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact"
+            android:iconTint="@color/white"
+            android:icon="@drawable/phone_48px"
+            android:title="@string/nav_contact" />
+    </group>
+    <group
+        android:id="@+id/group_review"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/ic_nav_review"
+            android:title="@string/nav_review"
+            android:iconTint="@color/white"
+            android:visible="false"/>
+    </group>
+    <group
+        android:id="@+id/group_share"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:visible="false"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_nav_share"
+            android:title="@string/nav_share" />
+    </group>
+
+    <group
+        android:id="@+id/group_logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit"
+            android:iconTint="@color/white"
+            android:title="@string/nav_logout" />
+    </group>
+
+
+    <item
+        android:title=""/>
+        <item
+            android:id="@+id/nav_powerd"
+            android:title="Developed By Binplus Technologies " />
+
+
+
+</menu>

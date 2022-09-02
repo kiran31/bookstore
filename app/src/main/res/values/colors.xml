@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00CED1</color>
+    <color name="colorPrimaryDark">#00CED1</color>
+    <color name="colorAccent">#00CED1</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#E3E3E3</color>
+    <color name="black">#000000</color>
+    <color name="dark_black">#000000</color>
+    <color name="backgroundgrey">#dedcdc</color>
+    <color name="offwhite">#96f2d8</color>
+    <color name="offwhite1">#f5e8b5</color>
+    <color name="dark_gray">#FFBAB7B7</color>
+    <color name="color_1">#1bdc84</color>
+    <color name="color_2">#1b4ddc</color>
+    <color name="color_3">#ff0023</color>
+    <color name="orange">#ffbb00</color>
+    <color name="yelow">#ffee05</color>
+    <color name="purple">#ed0bc0</color>
+    <color name="text_color">#016c6e</color>
+    <color name="light_gray">#faf5f5</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+    <color name="mrp_strike">#F44336</color>
+    <color name="add_cart">#fa9706</color>
+    <color name="add_cart_img">#C07614</color>
+    <color name="stock">#9C8C8C8C</color>
+    <color name="in_stock">#348C8C8C</color>
+    <color name="dialog">#90000000</color>
+    <color name="first_col">#D50525</color>
+    <color name="darkOverlaySoft">#40000000</color>
+    <color name="green">#00CED1</color>
+    <color name="bgcolor2">#eff0f4</color>
+</resources>

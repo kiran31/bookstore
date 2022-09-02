@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/why"/>
+
+    <EditText
+        android:fontFamily="@font/chivo"
+        android:id="@+id/et_remark"
+         android:singleLine="false"
+        android:layout_margin="@dimen/space_10"
+        android:background="@drawable/xml_textbox_bg"
+        android:hint="Enter Remark"
+        android:gravity="top"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:paddingBottom="@dimen/space_5"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_rounded_button"
+        android:padding="12dp"
+
+        android:textAllCaps="false"
+        android:fontFamily="@font/chivo"
+        android:gravity="center"
+        android:text="Proceed"
+        android:textColor="#fff"
+        android:textSize="@dimen/dimen_15sp" />
+    <Button
+        android:id="@+id/btn_no"
+        android:layout_toRightOf="@id/btn_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_rounded_button"
+        android:padding="12dp"
+        android:backgroundTint="@color/red"
+        android:textAllCaps="false"
+        android:fontFamily="@font/chivo"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="#fff"
+        android:textSize="@dimen/dimen_15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="78dp"
+    android:layout_height="78dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/img_pd_dt"
+        android:layout_width="78dp"
+        android:layout_height="match_parent"
+     android:src="@drawable/icon"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardElevation="@dimen/space_5"
+    app:cardUseCompatPadding="true"
+    android:layout_marginRight="@dimen/space_5"
+    android:layout_marginLeft="@dimen/space_5"
+    android:layout_marginTop="@dimen/space_5"
+    card_view:cardCornerRadius="4dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<ImageView
+    android:src="@drawable/coupon"
+    android:layout_width="match_parent"
+    android:scaleType="fitXY"
+    android:layout_height="180dp"/>
+        <LinearLayout
+            android:id="@+id/lin_dis"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/dimen_35dp"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Fonts.LatoBLack
+                android:layout_centerHorizontal="true"
+                android:text="Flat"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Fonts.LatoBLack
+                android:id="@+id/tv_per"
+                android:layout_centerHorizontal="true"
+                android:text="20%"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@id/lin_dis"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_height="match_parent">
+            <Fonts.LatoBLack
+                android:id="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:text="50% discount upto rs100"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <Fonts.LatoBLack
+                android:id="@+id/tv_desc"
+                android:layout_centerHorizontal="true"
+                android:text="Flat"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dash_border"/>
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_code"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_10">
+            <Fonts.LatoBLack
+                android:id="@+id/tv_date"
+                android:text="Flat"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/space_10"
+                android:textColor="@color/white"
+
+                android:background="@color/color_1"
+
+                android:text="Apply"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

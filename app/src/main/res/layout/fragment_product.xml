@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_cat"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_two_height"
+        android:background="@color/white"
+        android:visibility="gone">
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/relative_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+        </com.daimajia.slider.library.SliderLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tab_layout"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:elevation="@dimen/space_5"
+        android:weightSum="2"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_sort"
+            android:drawableLeft="@drawable/ic_sort_black_24dp"
+            android:text="Sort"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/space_18"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/space_5"
+            android:tag="sort"
+            android:fontFamily="@font/chivo"
+            android:layout_weight="1"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_filter"
+            android:tag="filter"
+            android:padding="@dimen/space_10"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/filter"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/img_no_items"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+       android:visibility="gone"
+        android:src="@drawable/noproduct"
+        android:layout_height="250dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_subcategory"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
